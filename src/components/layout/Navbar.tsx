@@ -98,10 +98,10 @@ export function Navbar() {
 
       {/* Mobile menu */}
       <div className={cn("lg:hidden", mobileMenuOpen ? "fixed inset-0 z-[100]" : "hidden")}>
-        <div className="fixed inset-0 bg-brand-navy-dark/80 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
+        <div className="fixed inset-0 bg-slate-900/80 backdrop-blur-md transition-opacity" onClick={() => setMobileMenuOpen(false)} />
         {/* Mobile menu panel */}
-        <div className="fixed inset-y-0 right-0 z-[101] w-full overflow-y-auto bg-white/95 backdrop-blur-xl px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10 shadow-2xl transition-transform transform">
-          <div className="flex items-center justify-between">
+        <div className="fixed inset-y-0 right-0 z-[101] w-full h-[100dvh] flex flex-col overflow-y-auto bg-white px-6 py-6 sm:max-w-sm shadow-2xl transition-transform transform">
+          <div className="flex items-center justify-between shrink-0">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3" onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Mahakal Bus Services</span>
               <div className="relative w-12 h-12 bg-white rounded-full overflow-hidden shadow-sm border border-slate-200 shrink-0">
@@ -119,19 +119,20 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <X className="h-6 w-6" aria-hidden="true" />
+              <X className="h-8 w-8" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-slate-100">
-              <div className="space-y-2 py-6">
+          
+          <div className="mt-8 flex-1 flex flex-col">
+            <div className="-my-6 divide-y divide-slate-100 flex-1">
+              <div className="space-y-4 py-8">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
                     className={cn(
-                      "-mx-3 block rounded-lg px-3 py-4 text-xl font-bold leading-7 hover:bg-orange-50 hover:text-orange-500 transition-colors",
+                      "-mx-3 block rounded-xl px-4 py-4 text-xl font-bold leading-7 hover:bg-orange-50 hover:text-orange-500 transition-colors",
                       pathname === item.href ? "text-orange-500 bg-orange-50/50" : "text-slate-700"
                     )}
                   >
@@ -139,8 +140,8 @@ export function Navbar() {
                   </Link>
                 ))}
               </div>
-              <div className="py-6">
-                <Button asChild className="w-full rounded-xl py-6 text-lg bg-sunset-gradient text-white border-none shadow-md" size="lg">
+              <div className="py-8 mt-auto">
+                <Button asChild className="w-full rounded-2xl py-8 text-xl bg-sunset-gradient text-white border-none shadow-[0_10px_30px_rgba(255,126,95,0.3)] font-bold" size="lg">
                   <a href="https://wa.me/919733317971?text=Hello%20Mahakal%20Bus%20Services%2C%20I%20would%20like%20to%20enquire%20about%20your%20travel%20services." target="_blank" rel="noopener noreferrer">
                     Book Journey Now
                   </a>
