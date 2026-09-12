@@ -53,11 +53,11 @@ export function Navbar() {
               {/* Premium Glow Effect */}
               <div className="absolute inset-0 bg-brand-gold/20 blur-2xl rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <div className="relative bg-white/10 backdrop-blur-md border-[3px] border-brand-gold rounded-3xl p-3 md:p-4 shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all duration-300 group-hover:bg-white/20 group-hover:shadow-[0_0_30px_rgba(212,175,55,0.6)]">
+              <div className="relative bg-white border border-slate-100 rounded-2xl p-2 md:p-3 shadow-sm transition-all duration-300 group-hover:shadow-md">
                 <img 
-                  src="/images/logo.png" 
+                  src="/images/logo.jpeg" 
                   alt="Mahakal Bus Services Logo" 
-                  className="h-16 md:h-24 w-auto object-contain drop-shadow-[0_0_12px_rgba(255,255,255,1)]"
+                  className="h-10 md:h-14 w-auto object-contain rounded-xl"
                 />
               </div>
             </Link>

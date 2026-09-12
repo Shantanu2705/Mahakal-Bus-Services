@@ -8,7 +8,7 @@ import { PhoneCall } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[95vh] flex items-center pt-20 overflow-hidden bg-slate-50">
+    <section className="relative min-h-[95vh] flex items-center pt-32 pb-40 overflow-hidden bg-slate-50">
       {/* Background Image & Overlays */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
