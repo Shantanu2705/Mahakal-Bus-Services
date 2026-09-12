@@ -41,7 +41,7 @@ export function TrustStrip() {
                 <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-50 text-orange-600 mb-6 group-hover:bg-sunset-gradient group-hover:text-white transition-all duration-500 shadow-sm group-hover:shadow-[0_10px_20px_rgba(255,126,95,0.3)] group-hover:scale-110">
                   <feature.icon className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3 tracking-tight">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-3 tracking-tight">{feature.name}</h3>
                 <p className="text-slate-500 font-medium">{feature.description}</p>
               </div>
             ))}
