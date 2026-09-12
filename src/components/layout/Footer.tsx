@@ -90,38 +90,50 @@ export function Footer() {
 
         </div>
 
-        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
           <p className="text-sm text-slate-400 font-medium">
             &copy; {currentYear} Mahakal Bus Services. All rights reserved.
           </p>
-          <div className="flex space-x-6 text-sm text-slate-400 font-medium">
-            <Link href="/about" className="hover:text-orange-500 transition-colors">Privacy Policy</Link>
-            <Link href="/about" className="hover:text-orange-500 transition-colors">Terms of Service</Link>
-          </div>
-        </div>
-        
-        {/* Designed By Credit */}
-        <div className="pt-6 pb-2 text-center flex justify-center w-full relative">
-          <a 
-            href="https://www.digitaldictionary.in" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center gap-2 px-6 py-2 rounded-full overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(255,126,95,0.4)]"
-          >
-            {/* Animated Background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 via-rose-500/10 to-orange-500/10 group-hover:from-orange-500 group-hover:via-rose-500 group-hover:to-orange-500 transition-colors duration-500 rounded-full" />
-            
-            {/* Border glow */}
-            <div className="absolute inset-0 border border-orange-200/50 group-hover:border-transparent rounded-full" />
+          
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 text-sm text-slate-400 font-medium">
+            <Link href="/privacy-policy" className="hover:text-orange-500 transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-orange-500 transition-colors">Terms of Service</Link>
 
-            <span className="relative z-10 text-xs md:text-sm font-bold text-slate-500 group-hover:text-white transition-colors duration-300 flex items-center">
-              Designed by <span className="ml-1.5 text-orange-500 group-hover:text-white transition-colors tracking-wide">Digital Dictionary</span>
-            </span>
-            <span className="relative z-10 flex h-3 w-3 ml-1">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75 group-hover:bg-white"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-500 group-hover:bg-white"></span>
-            </span>
-          </a>
+            {/* Designed By Credit - Pop Up Style */}
+            <div className="relative group animate-[bounce_3s_infinite]">
+              <a 
+                href="https://www.digitaldictionary.in" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="relative inline-flex items-center gap-3 px-6 py-2 rounded-xl transform transition-all duration-300 hover:scale-110 z-20"
+              >
+                {/* Glowing 3D Base layer */}
+                <div className="absolute inset-0 bg-sunset-gradient opacity-30 blur-lg group-hover:opacity-60 transition-opacity duration-300 rounded-xl" />
+                
+                {/* Main Pop-up Body */}
+                <div className="absolute inset-0 bg-white border border-orange-200 rounded-xl shadow-[0_15px_30px_rgba(255,126,95,0.2)]" />
+                
+                {/* Pop-up Tail (Tooltip pointer) */}
+                <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-l border-b border-orange-200 transform rotate-45 hidden md:block" />
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-t border-l border-orange-200 transform rotate-45 block md:hidden" />
+
+                {/* Content */}
+                <span className="relative z-10 text-xs font-bold text-slate-600 flex items-center">
+                  Designed by 
+                  <span className="ml-1.5 px-2.5 py-1 rounded-lg bg-sunset-gradient text-white shadow-sm font-black tracking-wide">
+                    Digital Dictionary
+                  </span>
+                </span>
+
+                {/* Notification Dot */}
+                <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-orange-500 border-2 border-white"></span>
+                </span>
+              </a>
+            </div>
+
+          </div>
         </div>
       </Container>
     </footer>
