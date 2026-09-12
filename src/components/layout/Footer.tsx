@@ -23,14 +23,14 @@ export function Footer() {
           {/* Brand & About */}
           <div className="lg:col-span-1 space-y-6">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative w-16 h-16 bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 transition-all duration-300 group-hover:shadow-md group-hover:scale-105">
+              <div className="relative w-14 h-14 md:w-16 md:h-16 bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 transition-all duration-300 group-hover:shadow-md group-hover:scale-105 shrink-0">
                 <img
                   src="/images/logo.jpeg"
                   alt="Mahakal Bus Services Logo"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="font-black text-2xl tracking-tight text-slate-800">MAHAKAL</span>
+              <span className="font-black text-xl md:text-2xl tracking-tight text-slate-800 leading-tight">MAHAKAL<br/><span className="text-orange-500 text-sm md:text-base">BUS SERVICES</span></span>
             </Link>
             <p className="text-sm leading-relaxed text-slate-500 font-medium">
               Premium travel services across West Bengal. Reliable, comfortable, and always on time. Experience the joy of traveling with us.

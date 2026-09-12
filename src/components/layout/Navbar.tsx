@@ -62,14 +62,14 @@ export function Navbar() {
               </div>
             </Link>
           </div>
-          <div className="flex lg:hidden">
+          <div className="flex lg:hidden relative z-50 pointer-events-auto">
             <button
               type="button"
-              className={cn("-m-2.5 inline-flex items-center justify-center rounded-md p-2.5", textColor)}
+              className={cn("-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer hover:bg-slate-100/50 transition-colors", textColor)}
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Menu className="h-7 w-7" aria-hidden="true" />
+              <Menu className="h-8 w-8" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-8">
@@ -97,21 +97,21 @@ export function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      <div className={cn("lg:hidden", mobileMenuOpen ? "fixed inset-0 z-50" : "hidden")}>
+      <div className={cn("lg:hidden", mobileMenuOpen ? "fixed inset-0 z-[100]" : "hidden")}>
         <div className="fixed inset-0 bg-brand-navy-dark/80 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
         {/* Mobile menu panel */}
-        <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white/95 backdrop-blur-xl px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10 shadow-2xl">
+        <div className="fixed inset-y-0 right-0 z-[101] w-full overflow-y-auto bg-white/95 backdrop-blur-xl px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10 shadow-2xl transition-transform transform">
           <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+            <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3" onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Mahakal Bus Services</span>
-              <div className="relative w-12 h-12 bg-white rounded-full overflow-hidden shadow-sm border border-slate-200">
+              <div className="relative w-12 h-12 bg-white rounded-full overflow-hidden shadow-sm border border-slate-200 shrink-0">
                 <img
                   src="/images/logo.jpeg"
                   alt="Mahakal Bus Services Logo"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="font-bold text-xl tracking-tight text-slate-800">MAHAKAL</span>
+              <span className="font-black text-xl tracking-tight text-slate-800 leading-tight">MAHAKAL<br/><span className="text-orange-500 text-sm">BUS SERVICES</span></span>
             </Link>
             <button
               type="button"
