@@ -34,17 +34,17 @@ export function Navbar() {
   const isHome = pathname === "/";
   
   // Permanent floating glass pill design
-  const navBackground = "glass-card top-4 mx-4 md:mx-auto max-w-7xl rounded-[2.5rem] py-2 px-4 shadow-[0_10px_40px_rgba(0,0,0,0.05)]";
+  const navBackground = "glass-card top-4 max-w-7xl mx-auto rounded-[2rem] md:rounded-[2.5rem] py-2 px-4 shadow-[0_10px_40px_rgba(0,0,0,0.05)]";
   const textColor = "text-slate-800";
 
   return (
     <header
       className={cn(
-        "fixed z-50 w-full md:w-auto left-0 right-0 md:left-4 md:right-4 lg:left-8 lg:right-8 transition-all duration-500 ease-out",
+        "fixed z-50 left-4 right-4 md:left-8 md:right-8 transition-all duration-500 ease-out",
         navBackground
       )}
     >
-      <div className="mx-auto w-full px-2 sm:px-4">
+      <div className="w-full px-1 md:px-4">
         <nav className="flex items-center justify-between" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 relative group">
