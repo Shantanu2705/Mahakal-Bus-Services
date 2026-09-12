@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #102A43;
+  --color-brand-navy-dark: #071A2B;
+  --color-brand-gold: #C9971A;
+  --color-brand-gold-bright: #E5B93F;
+  --color-brand-cream: #FBF6EC;
+  --color-brand-gray: #F4F5F7;
+  
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #f8fafc; /* slate-50 */
+  --foreground: #0f172a; /* slate-900 */
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    scroll-behavior: smooth;
+  }
+  
+  /* Hide scrollbar for gallery or specific horizontal scrolling sections */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@layer utilities {
+  .bg-sunset-gradient {
+    background: linear-gradient(135deg, #FF7E5F 0%, #FEB47B 50%, #FF9A9E 100%);
+    background-size: 200% auto;
+  }
+  
+  .bg-sunset-gradient:hover {
+    background-position: right center;
+  }
+  
+  .text-sunset {
+    background: linear-gradient(135deg, #FF7E5F 0%, #FEB47B 50%, #FF9A9E 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .watermark-text {
+    @apply absolute font-bold text-transparent text-[8rem] md:text-[15rem] select-none pointer-events-none;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.03);
+    line-height: 0.8;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+  }
+  
+  .sunset-card {
+    @apply bg-orange-50/90 backdrop-blur-lg border border-orange-100 shadow-[0_10px_40px_rgba(255,126,95,0.1)];
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
