@@ -34,18 +34,18 @@ export function Navbar() {
   const isHome = pathname === "/";
   
   // Permanent floating glass pill design
-  const navBackground = "glass-card top-4 max-w-7xl mx-auto rounded-[2rem] md:rounded-[2.5rem] py-2 px-4 shadow-[0_10px_40px_rgba(0,0,0,0.05)]";
+  const navBackground = "glass-card top-2 md:top-4 max-w-7xl mx-auto rounded-[2rem] md:rounded-[2.5rem] py-3 px-5 md:py-2 md:px-4 shadow-[0_15px_40px_rgba(0,0,0,0.08)]";
   const textColor = "text-slate-800";
 
   return (
     <header
       className={cn(
-        "fixed z-50 left-4 right-4 md:left-8 md:right-8 transition-all duration-500 ease-out",
+        "fixed z-50 left-2 right-2 md:left-8 md:right-8 transition-all duration-500 ease-out",
         navBackground
       )}
     >
-      <div className="w-full px-1 md:px-4">
-        <nav className="flex items-center justify-between" aria-label="Global">
+      <div className="w-full">
+        <nav className="flex items-center justify-between w-full" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 relative group">
               <span className="sr-only">Mahakal Bus Services</span>
@@ -53,11 +53,11 @@ export function Navbar() {
               {/* Premium Glow Effect */}
               <div className="absolute inset-0 bg-brand-gold/20 blur-2xl rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <div className="relative bg-white border border-slate-100 rounded-2xl p-2 md:p-3 shadow-sm transition-all duration-300 group-hover:shadow-md">
+              <div className="relative bg-white border border-slate-100 rounded-[1rem] md:rounded-2xl p-2 shadow-sm transition-all duration-300 group-hover:shadow-md">
                 <img 
                   src="/images/logo.jpeg" 
                   alt="Mahakal Bus Services Logo" 
-                  className="h-10 md:h-14 w-auto object-contain rounded-xl"
+                  className="h-12 w-auto md:h-14 object-contain rounded-lg md:rounded-xl"
                 />
               </div>
             </Link>
