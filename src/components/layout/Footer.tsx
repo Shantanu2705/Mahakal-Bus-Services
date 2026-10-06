@@ -101,57 +101,18 @@ export function Footer() {
             </div>
           </div>
           
-          {/* Digital Dictionary Banner */}
+          {/* Digital Dictionary Banner Image */}
           <a 
             href="https://www.digitaldictionarysiliguri.com" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="block w-full bg-slate-50 hover:bg-slate-100 transition-colors duration-500 rounded-[2rem] overflow-hidden group mb-4"
+            className="block w-full overflow-hidden group mb-4 transition-transform hover:scale-[1.01] duration-300 animate-pulse"
           >
-            <div className="flex flex-col md:flex-row items-center justify-between p-8 md:p-12 lg:px-16">
-              {/* Left Side */}
-              <div className="flex-1 w-full text-center md:text-left">
-                <h4 className="text-2xl md:text-3xl font-black text-slate-800 mb-8 tracking-tight uppercase group-hover:text-slate-900 transition-colors">
-                  Comprehensive Agency Solutions
-                </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-8 max-w-2xl mx-auto md:mx-0">
-                  <ul className="space-y-4 text-left">
-                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Website Development</li>
-                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Performance Marketing</li>
-                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Software Development</li>
-                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />SEO</li>
-                  </ul>
-                  <ul className="space-y-4 text-left">
-                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Digital Marketing</li>
-                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Google Ads</li>
-                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Mobile App</li>
-                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />ORM</li>
-                  </ul>
-                </div>
-                <div className="text-xl md:text-2xl font-medium text-slate-800 group-hover:text-orange-500 transition-colors duration-300">
-                  www.digitaldictionarysiliguri.com
-                </div>
-              </div>
-              
-              {/* Right Side Logo */}
-              <div className="mt-12 md:mt-0 flex flex-col items-center justify-center shrink-0 md:pl-16 relative">
-                <div className="relative w-40 h-40 flex items-center justify-center mb-3">
-                  {/* Outer Rings */}
-                  <div className="absolute inset-0 rounded-full border-[10px] border-amber-400 border-t-amber-300 border-b-amber-600 shadow-md group-hover:rotate-12 transition-transform duration-700 ease-out" />
-                  <div className="absolute inset-4 rounded-full border-[5px] border-amber-500 border-t-amber-400 border-b-amber-700 shadow-inner group-hover:-rotate-12 transition-transform duration-700 ease-out" />
-                  {/* Stylized D */}
-                  <span className="text-9xl font-black text-transparent bg-clip-text bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 italic pr-3 drop-shadow-lg transform -skew-x-6 z-10">D</span>
-                </div>
-                <div className="text-center mt-3 transform group-hover:scale-105 transition-transform duration-500">
-                  <div className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 uppercase tracking-tighter drop-shadow-sm leading-none" style={{textShadow: "1px 2px 3px rgba(0,0,0,0.15)"}}>
-                    Digital Dictionary
-                  </div>
-                  <div className="text-base font-black text-amber-700 tracking-[0.5em] uppercase mt-2">
-                    Siliguri
-                  </div>
-                </div>
-              </div>
-            </div>
+            <img 
+              src="/images/digital-dictionary-banner.png" 
+              alt="Digital Dictionary Banner" 
+              className="w-full h-auto object-contain"
+            />
           </a>
         </div>
       </Container>
