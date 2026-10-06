@@ -20,6 +20,18 @@ const fullFleet = [
   { id: 6, image: "/images/buses/bus-6.jpg", name: "Premium Group Bus" },
   { id: 7, image: "/images/buses/bus-7.jpg", name: "Modern Fleet Vehicle" },
   { id: 8, image: "/images/buses/bus-8.jpg", name: "Reliable Transit Coach" },
+  { id: 9, image: "/images/buses/bus-9.jpg", name: "Elite Sleeper Coach" },
+  { id: 10, image: "/images/buses/bus-10.jpg", name: "Night Cruiser Bus" },
+  { id: 11, image: "/images/buses/bus-11.jpg", name: "Spacious Multi-Axle" },
+  { id: 12, image: "/images/buses/bus-12.jpg", name: "Premium Night Express" },
+  { id: 13, image: "/images/buses/bus-13.jpg", name: "Luxury Sleeper Edition" },
+  { id: 14, image: "/images/buses/bus-14.jpg", name: "Express Travel Coach" },
+  { id: 15, image: "/images/buses/bus-15.jpg", name: "Intercity AC Cruiser" },
+  { id: 16, image: "/images/buses/bus-16.jpg", name: "Tourist Special Coach" },
+  { id: 17, image: "/images/buses/bus-17.jpg", name: "Comfort Plus Journey" },
+  { id: 18, image: "/images/buses/bus-18.jpg", name: "Long Haul Master" },
+  { id: 19, image: "/images/buses/bus-19.jpg", name: "Premium Sleeper Plus" },
+  { id: 20, image: "/images/buses/bus-20.jpg", name: "Executive Class Master" },
 ];
 
 export default function FleetPage() {

@@ -19,6 +19,18 @@ const galleryImages = [
   { id: 6, src: "/images/buses/bus-6.jpg", alt: "Modern Bus Fleet" },
   { id: 7, src: "/images/buses/bus-7.jpg", alt: "Reliable Transportation" },
   { id: 8, src: "/images/buses/bus-8.jpg", alt: "Event Transport Coach" },
+  { id: 9, src: "/images/buses/bus-9.jpg", alt: "Sleeper Coach Interior" },
+  { id: 10, src: "/images/buses/bus-10.jpg", alt: "Night Travel Bus" },
+  { id: 11, src: "/images/buses/bus-11.jpg", alt: "Spacious Seating Arrangement" },
+  { id: 12, src: "/images/buses/bus-12.jpg", alt: "Premium Night Service" },
+  { id: 13, src: "/images/buses/bus-13.jpg", alt: "Luxury Sleeper Bus" },
+  { id: 14, src: "/images/buses/bus-14.jpg", alt: "Express Travel Coach" },
+  { id: 15, src: "/images/buses/bus-15.jpg", alt: "Intercity AC Bus" },
+  { id: 16, src: "/images/buses/bus-16.jpg", alt: "Tourist Bus Exterior" },
+  { id: 17, src: "/images/buses/bus-17.jpg", alt: "Comfortable Journey Coach" },
+  { id: 18, src: "/images/buses/bus-18.jpg", alt: "Long Distance Travel" },
+  { id: 19, src: "/images/buses/bus-19.jpg", alt: "Premium Sleeper Facility" },
+  { id: 20, src: "/images/buses/bus-20.jpg", alt: "Executive Class Bus" },
 ];
 
 export default function GalleryPage() {
