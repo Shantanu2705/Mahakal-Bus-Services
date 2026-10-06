@@ -11,13 +11,15 @@ export function Hero() {
     <section className="relative min-h-[95vh] flex items-center pt-32 pb-40 overflow-hidden bg-slate-50">
       {/* Background Image & Overlays */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <Image
-          src="/images/buses/bus-1.jpg"
-          alt="Mahakal Bus Services Fleet"
-          fill
-          priority
-          className="object-cover opacity-60 scale-105 transform-gpu will-change-transform"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-70 scale-105 transform-gpu will-change-transform"
+        >
+          <source src="/videos/laptop-video.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-orange-50/50" />
       </div>
