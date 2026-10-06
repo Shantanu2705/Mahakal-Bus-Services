@@ -90,50 +90,69 @@ export function Footer() {
 
         </div>
 
-        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
-          <p className="text-sm text-slate-400 font-medium">
-            &copy; {currentYear} Mahakal Bus Services. All rights reserved.
-          </p>
-          
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 text-sm text-slate-400 font-medium">
-            <Link href="/privacy-policy" className="hover:text-orange-500 transition-colors">Privacy Policy</Link>
-            <Link href="/terms-of-service" className="hover:text-orange-500 transition-colors">Terms of Service</Link>
-
-            {/* Designed By Credit - Pop Up Style */}
-            <div className="relative group animate-[bounce_3s_infinite]">
-              <a 
-                href="https://www.digitaldictionary.in" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="relative inline-flex items-center gap-3 px-6 py-2 rounded-xl transform transition-all duration-300 hover:scale-110 z-20"
-              >
-                {/* Glowing 3D Base layer */}
-                <div className="absolute inset-0 bg-sunset-gradient opacity-30 blur-lg group-hover:opacity-60 transition-opacity duration-300 rounded-xl" />
-                
-                {/* Main Pop-up Body */}
-                <div className="absolute inset-0 bg-white border border-orange-200 rounded-xl shadow-[0_15px_30px_rgba(255,126,95,0.2)]" />
-                
-                {/* Pop-up Tail (Tooltip pointer) */}
-                <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-l border-b border-orange-200 transform rotate-45 hidden md:block" />
-                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-t border-l border-orange-200 transform rotate-45 block md:hidden" />
-
-                {/* Content */}
-                <span className="relative z-10 text-xs font-bold text-slate-600 flex items-center">
-                  Designed by 
-                  <span className="ml-1.5 px-2.5 py-1 rounded-lg bg-sunset-gradient text-white shadow-sm font-black tracking-wide">
-                    Digital Dictionary
-                  </span>
-                </span>
-
-                {/* Notification Dot */}
-                <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-orange-500 border-2 border-white"></span>
-                </span>
-              </a>
+        <div className="pt-8 border-t border-slate-100 flex flex-col gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
+            <p className="text-sm text-slate-400 font-medium">
+              &copy; {currentYear} Mahakal Bus Services. All rights reserved.
+            </p>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 text-sm text-slate-400 font-medium">
+              <Link href="/privacy-policy" className="hover:text-orange-500 transition-colors">Privacy Policy</Link>
+              <Link href="/terms-of-service" className="hover:text-orange-500 transition-colors">Terms of Service</Link>
             </div>
-
           </div>
+          
+          {/* Digital Dictionary Banner */}
+          <a 
+            href="https://www.digitaldictionarysiliguri.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block w-full bg-slate-50 hover:bg-slate-100 transition-colors duration-500 rounded-[2rem] overflow-hidden group mb-4"
+          >
+            <div className="flex flex-col md:flex-row items-center justify-between p-8 md:p-12 lg:px-16">
+              {/* Left Side */}
+              <div className="flex-1 w-full text-center md:text-left">
+                <h4 className="text-2xl md:text-3xl font-black text-slate-800 mb-8 tracking-tight uppercase group-hover:text-slate-900 transition-colors">
+                  Comprehensive Agency Solutions
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-8 max-w-2xl mx-auto md:mx-0">
+                  <ul className="space-y-4 text-left">
+                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Website Development</li>
+                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Performance Marketing</li>
+                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Software Development</li>
+                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />SEO</li>
+                  </ul>
+                  <ul className="space-y-4 text-left">
+                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Digital Marketing</li>
+                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Google Ads</li>
+                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />Mobile App</li>
+                    <li className="flex items-center text-slate-700 font-semibold text-lg md:text-xl"><span className="w-2 h-2 rounded-full bg-slate-800 mr-4 shrink-0" />ORM</li>
+                  </ul>
+                </div>
+                <div className="text-xl md:text-2xl font-medium text-slate-800 group-hover:text-orange-500 transition-colors duration-300">
+                  www.digitaldictionarysiliguri.com
+                </div>
+              </div>
+              
+              {/* Right Side Logo */}
+              <div className="mt-12 md:mt-0 flex flex-col items-center justify-center shrink-0 md:pl-16 relative">
+                <div className="relative w-40 h-40 flex items-center justify-center mb-3">
+                  {/* Outer Rings */}
+                  <div className="absolute inset-0 rounded-full border-[10px] border-amber-400 border-t-amber-300 border-b-amber-600 shadow-md group-hover:rotate-12 transition-transform duration-700 ease-out" />
+                  <div className="absolute inset-4 rounded-full border-[5px] border-amber-500 border-t-amber-400 border-b-amber-700 shadow-inner group-hover:-rotate-12 transition-transform duration-700 ease-out" />
+                  {/* Stylized D */}
+                  <span className="text-9xl font-black text-transparent bg-clip-text bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 italic pr-3 drop-shadow-lg transform -skew-x-6 z-10">D</span>
+                </div>
+                <div className="text-center mt-3 transform group-hover:scale-105 transition-transform duration-500">
+                  <div className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 uppercase tracking-tighter drop-shadow-sm leading-none" style={{textShadow: "1px 2px 3px rgba(0,0,0,0.15)"}}>
+                    Digital Dictionary
+                  </div>
+                  <div className="text-base font-black text-amber-700 tracking-[0.5em] uppercase mt-2">
+                    Siliguri
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </Container>
     </footer>
