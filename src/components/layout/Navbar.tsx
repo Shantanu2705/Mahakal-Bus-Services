@@ -33,8 +33,8 @@ export function Navbar() {
 
   const isHome = pathname === "/";
   
-  // Permanent floating glass pill design
-  const navBackground = "glass-card top-2 md:top-4 max-w-7xl mx-auto rounded-[2rem] md:rounded-[2.5rem] py-3 px-5 md:py-2 md:px-4 shadow-[0_15px_40px_rgba(0,0,0,0.08)]";
+  // Permanent totally transparent design
+  const navBackground = "bg-transparent top-2 md:top-4 max-w-7xl mx-auto py-3 px-5 md:py-2 md:px-4";
   const textColor = "text-slate-800";
 
   return (
