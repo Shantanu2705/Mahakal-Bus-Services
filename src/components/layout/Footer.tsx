@@ -25,9 +25,9 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2 group">
               <div className="relative w-16 h-16 md:w-20 md:h-20 bg-transparent transition-all duration-300 group-hover:scale-105 shrink-0">
                 <img
-                  src="/images/logo.jpeg"
+                  src="/images/logo.png"
                   alt="Mahakal Bus Services Logo"
-                  className="w-full h-full object-contain mix-blend-multiply"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <span className="font-black text-xl md:text-2xl tracking-tight text-slate-800 leading-tight">MAHAKAL<br/><span className="text-orange-500 text-sm md:text-base">BUS SERVICES</span></span>

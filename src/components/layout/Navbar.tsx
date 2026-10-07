@@ -55,9 +55,9 @@ export function Navbar() {
               
               <div className="relative bg-transparent p-0 transition-all duration-300 group-hover:scale-105">
                 <img 
-                  src="/images/logo.jpeg" 
+                  src="/images/logo.png" 
                   alt="Mahakal Bus Services Logo" 
-                  className="h-16 w-auto md:h-24 object-contain mix-blend-multiply"
+                  className="h-16 w-auto md:h-24 object-contain"
                 />
               </div>
             </Link>
@@ -106,9 +106,9 @@ export function Navbar() {
               <span className="sr-only">Mahakal Bus Services</span>
               <div className="relative w-16 h-16 bg-transparent shrink-0">
                 <img
-                  src="/images/logo.jpeg"
+                  src="/images/logo.png"
                   alt="Mahakal Bus Services Logo"
-                  className="w-full h-full object-contain mix-blend-multiply"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <span className="font-black text-xl tracking-tight text-slate-800 leading-tight">MAHAKAL<br/><span className="text-orange-500 text-sm">BUS SERVICES</span></span>
