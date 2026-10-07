@@ -49,7 +49,7 @@ export function Hero() {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full sunset-card text-orange-600 text-xs md:text-sm font-bold tracking-widest uppercase mb-8"
               >
                 <span className="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_8px_#f97316]" />
-                Premium Travel Experience
+                Future Premiuim Travel Experience
               </motion.span>
               
               <motion.h1 
