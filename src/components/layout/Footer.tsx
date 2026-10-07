@@ -23,11 +23,11 @@ export function Footer() {
           {/* Brand & About */}
           <div className="lg:col-span-1 space-y-6">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative w-14 h-14 md:w-16 md:h-16 bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 transition-all duration-300 group-hover:shadow-md group-hover:scale-105 shrink-0">
+              <div className="relative w-16 h-16 md:w-20 md:h-20 bg-transparent transition-all duration-300 group-hover:scale-105 shrink-0">
                 <img
                   src="/images/logo.jpeg"
                   alt="Mahakal Bus Services Logo"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain mix-blend-multiply"
                 />
               </div>
               <span className="font-black text-xl md:text-2xl tracking-tight text-slate-800 leading-tight">MAHAKAL<br/><span className="text-orange-500 text-sm md:text-base">BUS SERVICES</span></span>
@@ -101,19 +101,12 @@ export function Footer() {
             </div>
           </div>
           
-          {/* Digital Dictionary Banner Image */}
-          <a 
-            href="https://www.digitaldictionarysiliguri.com" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="block w-full overflow-hidden group mb-4 transition-transform hover:scale-[1.01] duration-300 animate-pulse"
-          >
-            <img 
-              src="/images/digital-dictionary-banner.png" 
-              alt="Digital Dictionary Banner" 
-              className="w-full h-auto object-contain"
-            />
-          </a>
+          {/* Digital Dictionary Credits */}
+          <div className="flex justify-center items-center mt-2">
+            <p className="text-sm font-medium text-slate-500">
+              Designed by <a href="https://www.digitaldictionarysiliguri.com" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-600 transition-colors hover:underline">Digital Dictionary</a>
+            </p>
+          </div>
         </div>
       </Container>
     </footer>

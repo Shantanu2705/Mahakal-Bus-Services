@@ -53,11 +53,11 @@ export function Navbar() {
               {/* Premium Glow Effect */}
               <div className="absolute inset-0 bg-brand-gold/20 blur-2xl rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <div className="relative bg-white border border-slate-100 rounded-[1rem] md:rounded-2xl p-2 shadow-sm transition-all duration-300 group-hover:shadow-md">
+              <div className="relative bg-transparent p-0 transition-all duration-300 group-hover:scale-105">
                 <img 
                   src="/images/logo.jpeg" 
                   alt="Mahakal Bus Services Logo" 
-                  className="h-12 w-auto md:h-14 object-contain rounded-lg md:rounded-xl"
+                  className="h-16 w-auto md:h-24 object-contain mix-blend-multiply"
                 />
               </div>
             </Link>
@@ -104,11 +104,11 @@ export function Navbar() {
           <div className="flex items-center justify-between shrink-0">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3" onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Mahakal Bus Services</span>
-              <div className="relative w-12 h-12 bg-white rounded-full overflow-hidden shadow-sm border border-slate-200 shrink-0">
+              <div className="relative w-16 h-16 bg-transparent shrink-0">
                 <img
                   src="/images/logo.jpeg"
                   alt="Mahakal Bus Services Logo"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain mix-blend-multiply"
                 />
               </div>
               <span className="font-black text-xl tracking-tight text-slate-800 leading-tight">MAHAKAL<br/><span className="text-orange-500 text-sm">BUS SERVICES</span></span>

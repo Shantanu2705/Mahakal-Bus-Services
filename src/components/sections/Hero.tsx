@@ -16,17 +16,17 @@ export function Hero() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-70 scale-105 transform-gpu will-change-transform"
+          className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/videos/laptop-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-orange-50/50" />
+        {/* Removed heavy white gradients to display the video clearly as requested */}
+        <div className="absolute inset-0 bg-black/20" />
       </div>
 
       {/* Massive Watermark Typography */}
       <div className="absolute top-1/4 -left-20 z-0 rotate-[-5deg] pointer-events-none">
-        <h2 className="watermark-text text-slate-200/30">MAHAKAL</h2>
+        <h2 className="watermark-text text-white/10">MAHAKAL</h2>
       </div>
 
       <Container className="relative z-10 w-full">
@@ -55,16 +55,16 @@ export function Hero() {
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-slate-800 leading-[1.05] mb-6 tracking-tight drop-shadow-sm"
+                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[1.05] mb-6 tracking-tight drop-shadow-lg"
               >
                 Ride Smooth.<br />
-                <span className="text-sunset">Travel Happy.</span>
+                <span className="text-sunset drop-shadow-md">Travel Happy.</span>
               </motion.h1>
               
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-base sm:text-lg md:text-2xl text-slate-600 mb-10 max-w-2xl leading-relaxed font-medium"
+                className="text-base sm:text-lg md:text-2xl text-white mb-10 max-w-2xl leading-relaxed font-medium drop-shadow-md"
               >
                 Reliable transportation for comfortable journeys, group travel, and memorable trips across West Bengal and beyond.
               </motion.p>
